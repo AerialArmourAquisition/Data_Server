@@ -9,7 +9,7 @@ services:
 
     environment:
       MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: pizzas
+      MYSQL_DATABASE: password
 
     volumes:
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
