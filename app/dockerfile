@@ -6,6 +6,7 @@ FROM python:latest
 # Update
 RUN apt-get -y update
 RUN apt-get -y install vim nano
+RUN apt -y install uvicorn
 
 # Add all python dependencies
 COPY requirements.txt .
@@ -17,5 +18,4 @@ EXPOSE 5000
 # Copy the application files
 ADD . .
 WORKDIR /app
-ENTRYPOINT [ "python" ]
-CMD [ "./service.py" ]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "5000", "--reload"]
