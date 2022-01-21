@@ -2,7 +2,6 @@ import os
 import pathlib
 import uuid
 import uvicorn
-from PIL import Image
 from fastapi import FastAPI, File, UploadFile
 from fastapi.responses import FileResponse
 
