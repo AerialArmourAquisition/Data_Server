@@ -22,7 +22,7 @@ app_1  | INFO:     Application startup complete.
 app_1  | INFO:     Uvicorn running on http://127.0.0.1:5000 (Press CTRL+C to quit)
 ```
 
-$. To test API calls open your localhost in the browser and add `/docs` 
+4. To test API calls open your localhost in the browser and add `/docs` 
 ```
 http://127.0.0.1:5000/docs
 ```
