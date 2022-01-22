@@ -17,5 +17,4 @@ EXPOSE 5000
 # Copy the application files
 ADD . .
 WORKDIR /app
-ENTRYPOINT [ "python" ]
-CMD [ "main.py" ]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "5000"]
